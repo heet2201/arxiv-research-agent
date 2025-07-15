@@ -8,8 +8,8 @@ class Config:
     """Configuration class for ArXiv Research Agent"""
     
     # API Configuration
-    OPENROUTER_API_KEY: str = os.getenv("OPENROUTER_API_KEY", "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")
-    SERPER_API_KEY: Optional[str] = os.getenv("SERPER_API_KEY", "138dbde3ec16b94f29f6cad922dba81e269709ef")
+    OPENROUTER_API_KEY: str = os.getenv("OPENROUTER_API_KEY")
+    SERPER_API_KEY: Optional[str] = os.getenv("SERPER_API_KEY")
     SEMANTIC_SCHOLAR_API_KEY: Optional[str] = os.getenv("SEMANTIC_SCHOLAR_API_KEY", None)
     
     # Model Configuration
